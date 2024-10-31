@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-image: url('images/OIP.jpg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+    color: rgb(51, 0, 255);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+    margin-top: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px #ffffff, 3px 5px 5px #ffffff;
+}
+
+.offer-box {
+    padding: 10px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.offer-box:hover {
+    background: linear-gradient(to top, #ffcfcf, #a68af0);
+}
+
+.box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    height: 80%;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    background: linear-gradient(to right, #645c53, #000000);
+    border-radius: 10px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+h2 {
+    color: #e7f9fa;
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-shadow: 2px 3px 5px #ff0000, 3px 5px 10px #0000ff;
+}
+
+h2:hover {
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #e7f9fa;
+    margin: 5px;
+    font-size: 25px;
+}
+
+h3:hover {
+    font-size: 30px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 10px #2b2b57, 3px 5px 10px #b23b74;
+}
+
+p {
+    margin-top: 0px;
+    color: #ecc6c6;
+    font-size: larger;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(211, 25, 96);
+    font-weight: 800;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(187, 3, 73);
+}
+
+.btn:hover {
+    background-color: #e61855;
+    box-shadow: 0px 0px 0px 2px rgba(238, 40, 116, 0.911);
+}
+
+.ribbon-wrap {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.ribbon-wrap::before,
+.ribbon-wrap::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #1c1616;
+    position: absolute;
+    z-index: -1;
+}
+
+.ribbon-wrap::before {
+    top: 0;
+    right: 5px;
+}
+
+.ribbon-wrap::after {
+    bottom: 5px;
+    left: 0;
+
+}
+
+.ribbon {
+    width: 225px;
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+    padding: 8px 0;
+    background: #1c1616;
+    color: #0bbcf7;
+    position: absolute;
+    transform: rotate(-45deg);
+    padding-left: 5px;
+    left: -40%;
+    top: 25%;
+}
+
+.btn:hover,
+.ribbon:hover {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #0bbcf7;
+    }
+
+    100% {
+        box-shadow: 0 0 20px #0bbcf7;
+    }
+}
